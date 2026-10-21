@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Suite">
+<parameter name="browser" value="Chrome"></parameter>
+  <parameter name="url" value="https://www.flipkart.com/"></parameter>
+  <test name="ChromeTest">
+  
+    <classes>
+      <class name="com.setpDefenition.FlipkartRunTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="EdgeTest">
+  <parameter name="browser" value="edge"></parameter>
+  <classes>
+<class name="com.setpDefenition.FlipkartRunTest"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
